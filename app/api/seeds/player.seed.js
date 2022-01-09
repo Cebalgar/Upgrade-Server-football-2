@@ -53,7 +53,7 @@ const players = [
 
 
 mongoose
-  .connect("mongodb+srv://Balgarce:Balgarce77@cluster0.okbtd.mongodb.net/server-football?retryWrites=true&w=majority", {
+  .connect(process.env.MONGO_DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
